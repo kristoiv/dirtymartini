@@ -4,7 +4,7 @@ Martini is a great Go(lang) library for creating web-related software. A part of
 
 ## Examples
 
-```Golang
+```go
 package main
 
 import (
