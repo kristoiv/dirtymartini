@@ -18,12 +18,8 @@ func New() *Dirty {
 	return d
 }
 
-func (d *Dirty) SetLoggerIdentity(name string) {
-	if name == "" {
-		d.logger.SetPrefix("")
-		return
-	}
-	d.logger.SetPrefix("[" + name + "] ")
+func (d *Dirty) SetLoggerPrefix(name string) {
+	d.logger.SetPrefix(name)
 }
 
 type ClassicDirty struct {
